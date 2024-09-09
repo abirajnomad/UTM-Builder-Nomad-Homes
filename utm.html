@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign URL Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Campaign URL Builder</h1>
+        <form id="url-builder">
+            <div class="form-group">
+                <label for="base-url">Base URL</label>
+                <input type="text" id="base-url" placeholder="https://example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="utm-source">Campaign Source (utm_source)</label>
+                <input type="text" id="utm-source" placeholder="google" required>
+            </div>
+
+            <div class="form-group">
+                <label for="utm-medium">Campaign Medium (utm_medium)</label>
+                <input type="text" id="utm-medium" placeholder="cpc" required>
+            </div>
+
+            <div class="form-group">
+                <label for="utm-campaign">Campaign Name (utm_campaign)</label>
+                <input type="text" id="utm-campaign" placeholder="spring_sale" required>
+            </div>
+
+            <div class="form-group">
+                <label for="utm-term">Campaign Term (utm_term)</label>
+                <input type="text" id="utm-term" placeholder="shoes">
+            </div>
+
+            <div class="form-group">
+                <label for="utm-content">Campaign Content (utm_content)</label>
+                <input type="text" id="utm-content" placeholder="ad_variation_1">
+            </div>
+
+            <button type="button" id="generate-url">Generate URL</button>
+        </form>
+
+        <div class="output">
+            <h2>Generated URL:</h2>
+            <p id="generated-url">Your URL will appear here</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
